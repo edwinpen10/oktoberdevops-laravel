@@ -17,7 +17,7 @@ node {
             sshagent (credentials: ['ssh-dev']) {
                 sh 'mkdir -p ~/.ssh'
                 sh 'ssh-keyscan -H "52.221.192.113" > ~/.ssh/known_hosts'
-                sh "rsync -rav --delete ./ ubuntu@52.221.192.113:/home/ubuntu/prod.kelasdevops.xyz/ --exclude=.env --exclude=storage --exclude=.git"        }
+                sh "rsync -rav --delete ./ ubuntu@52.221.192.113:/home/ubuntu/dev.kelasdevops.xyz/ --exclude=.env --exclude=storage --exclude=.git"        }
         }
     }
 
