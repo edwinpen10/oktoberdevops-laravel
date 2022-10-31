@@ -23,7 +23,7 @@ node {
 
     stage('Test') {
         docker.image('php:7.4-cli').inside('-u root') {
-            sh 'php artisan test --testsuite=Unit'
+            sh 'php artisan test --testsuite=Feature'
         }
     }
 
