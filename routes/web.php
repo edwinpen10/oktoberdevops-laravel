@@ -24,7 +24,7 @@ Route::get('/', function () {
 });
 
 Route::get('/version', function () {
-    return ["version" => "1.2.0"];
+    return ["version" => "1.2.1"];
 });
 
 Route::get('/lang', function () {
